@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #787774;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #bfb5b4;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Inbox</a>
+		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Projects</a>
+		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
+		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
+		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Knowledge</a>
+		<a id="topics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> Topics</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Notes</a>
+		<a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Media</a>
+		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
+		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Lifewiki</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/HTML-Navigation-Bar-HOME-558712b9406047a4be01ea2b941ef4b4?pvs=4", '_top').focus();
+			else if (id == "inbox")
+				window.open("https://www.notion.so/INBOX-2aa146bf378b477bbc0474b5ef63ba96?pvs=4", '_top').focus();
+			else if (id == "week")
+				window.open("https://www.notion.so/PLANNER-285d4ebedb6348878d781d0cefc75344?pvs=4", '_top').focus();
+			else if (id == "projects")
+				window.open("https://www.notion.so/PROJECTS-edd2b481d65b40c1ae203fc2f14344c3?pvs=4", '_top').focus();
+			else if (id == "business")
+				window.open("https://www.notion.so/BUSINESS-48ffa00b5bcb457ba47aef2e9d55b1a1?pvs=4", '_top').focus();
+			else if (id == "tasks")
+				window.open("https://www.notion.so/TASKS-990de3fba1824ebeb0d5c2dff81b2327?pvs=4", '_top').focus();
+			else if (id == "knowledge")
+				window.open("https://www.notion.so/KNOWLEDGE-88bb5df7b2ca4123937f2284d8308525?pvs=4", '_top').focus();
+			else if (id == "topics")
+				window.open("https://www.notion.so/TOPICS-74844e81f0794326b7269bb9fbcc2abf?pvs=4", '_top').focus();
+			else if (id == "notes")
+				window.open("https://www.notion.so/NOTES-31f55b38d54f481ab90714afe1a2c306?pvs=4", '_top').focus();
+			else if (id == "media")
+				window.open("https://www.notion.so/MEDIA-9de873355d2844408156caa2be4003a2?pvs=4", '_top').focus();
+			else if (id == "resourses")
+				window.open("https://www.notion.so/RESOURCES-f258c4d3c53740afba859991c66916fb?pvs=4", '_top').focus();
+			else if (id == "lifewiki")
+				window.open("https://www.notion.so/LIFEWIKI-148d53cfba5342e49f6f11e8885b1b3a?pvs=4", '_top').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
