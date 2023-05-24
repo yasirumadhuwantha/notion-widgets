@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #191919;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #bfb5b4;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="fitness" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-person-running  fa-2x" style="font-size:2x;color:#ffffff"></i></a>
+		<a id="habits" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-arrows-rotate fa-2x" style="font-size:2x;color:#0acf7d"></i></a>
+		<a id="stopwatch" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-stopwatch fa-2x" style="font-size:2x;color:#4cd9e6"></i></a>
+		<a id="weight" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bell fa-2x" style="font-size:2x;color:#ffffff"></i></a>
+		<a id="targets" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-flag fa-2x" style="font-size:2x;color:#F44336"></i></a>
+		<a id="milestones" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-flag fa-2x" style="font-size:2x;color:#FFFF00"></i></a>
+		<a id="achievements" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-trophy fa-2x" style="font-size:2x;color:#0acf7d"></i></a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'fitness')
+				window.open("https://www.notion.so/abstract-general-workspace/Analytical-Fitness-Tracker-1-0-99e152562e944ec198b27ca12d0b3d46?pvs=4", '_top').focus();
+			else if (id == "habits")
+				window.open("https://www.notion.so/abstract-general-workspace/Analytical-Habit-Tracker-2-1-d0c50c5f163043c5a23f8a0c973c8c66?pvs=4", '_top').focus();
+			else if (id == "stopwatch")
+				window.open("https://www.notion.so/abstract-general-workspace/Advanced-Time-Tracker-1-1-d4a08cc4115a4460bce0eeb69ba0431c?pvs=4", '_top').focus();
+			else if (id == "weight")
+				window.open("https://www.notion.so/abstract-general-workspace/Simple-Weight-Tracker-631530219bc046b9b5c1f94b2a06c928?pvs=4", '_top').focus();
+			else if (id == "targets")
+				window.open("https://www.notion.so/abstract-general-workspace/Daily-Milestone-Tracker-f307e7667a6c4c8f8b5ee975c1757e46?pvs=4", '_top').focus();
+			else if (id == "milestones")
+				window.open("https://www.notion.so/abstract-general-workspace/Personal-Milestone-Tracker-1b6647399a7c4e82b07f4a587fee93b9?pvs=4", '_top').focus();
+			else if (id == "achievements")
+				window.open("https://www.notion.so/abstract-general-workspace/Personal-Achievement-Tracker-e1443f4b19d0459e8abf295e51d9f8b1?pvs=4", '_top').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
