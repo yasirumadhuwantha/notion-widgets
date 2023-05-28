@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #252525;
+		}
+
+		.border {
+			border: 1px solid #252525;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #bfb5b4;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="house" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house-user  fa-2x" style="font-size:2x;color:#FB792E"></i></a>
+		<a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-photo-film fa-2x" style="font-size:2x;color:#0acf7d"></i></a>
+		<a id="openbook" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-open fa-2x" style="font-size:2x;color:#E22647"></i></a>
+		<a id="hippo" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-hippo fa-2x" style="font-size:2x;color:#e97345"></i></a>
+		<a id="flask" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-flask-vial fa-2x" style="font-size:2x;color:#CF9FFF"></i></a>
+		<a id="lemon" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lemon fa-2x" style="font-size:2x;color:#FFFF00"></i></a>
+		<a id="gallery" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-snowflake fa-2x" style="font-size:2x;color:#31AFE2"></i></a>
+        <a id="sketch" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-brush fa-2x" style="font-size:2x;color:#FE5722"></i></a>
+        <a id="arc" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-compass-drafting fa-2x" style="font-size:2x;color:#F24F66"></i></a>
+        <a id="lightbulb" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb fa-2x" style="font-size:2x;color:#FFCA10"></i></a>
+        <a id="comments" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-comments fa-2x" style="font-size:2x;color:#2BCB4D"></i></a>
+        <a id="microphone" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-microphone-lines fa-2x" style="font-size:2x;color:#ffffff"></i></a>
+        <a id="safari" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-safari fa-2x" style="font-size:2x;color:#1DA2F8"></i></a>
+        <a id="redhat" onclick="navigate(this.id)" href="#"> <i class="fa-brands fa-redhat fa-2x" style="font-size:2x;color:#EE0000"></i></a>
+        <a id="calculator" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calculator fa-2x" style="font-size:2x;color:#CDCCD1"></i></a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'house')
+				window.open("https://www.notion.so/yasiru-madhuwantha-first-workspace/Workspace-Dashboard-39293435f31f46d98357c6f60ff21d5e?pvs=4", '_top').focus();
+			else if (id == "media")
+				window.open("https://www.notion.so/yasiru-madhuwantha-second-workspace/Workspace-Dashboard-4a452bb887854e2c9b5d9df4c534d077?pvs=4", '_top').focus();
+			else if (id == "openbook")
+				window.open("https://www.notion.so/yasiru-madhuwantha-third-workspace/Workspace-Dashboard-5ceaa05a16204007a5d68b010a7df1ac?pvs=4", '_top').focus();
+			else if (id == "hippo")
+				window.open("https://www.notion.so/yasiru-madhuwantha-fourth-workspace/Workspace-Dashboard-102aa0584b8242d3b048ce9d84f379da?pvs=4", '_top').focus();
+			else if (id == "flask")
+				window.open("https://www.notion.so/yasiru-madhuwantha-fifth-workspace/Workspace-Dashboard-99f7c6a64f0c47aab98af15d6f27f4ae?pvs=4", '_top').focus();
+			else if (id == "lemon")
+				window.open("https://www.notion.so/yasiru-madhuwantha-sixth-workspace/Workspace-Dashboard-36456ea3b9b145da920d1fafce019f2e?pvs=4", '_top').focus();
+			else if (id == "gallery")
+				window.open("https://www.notion.so/yasiru-madhuwantha-seventh-workspace/Workspace-Dashboard-aef69cccad554021b33294525aeb7fff?pvs=4", '_top').focus();
+            else if (id == "sketch")
+				window.open("https://www.notion.so/yasiru-madhuwantha-eighth-workspace/Workspace-Dashboard-8b7a81ab127640069db093c2ea2f8904?pvs=4", '_top').focus();
+            else if (id == "arc")
+				window.open("https://www.notion.so/yasiru-madhuwantha-ninth-workspace/Workspace-Dashboard-cecd66df7efb41d68721e41b0b69a9c1?pvs=4", '_top').focus();
+            else if (id == "lightbulb")
+				window.open("https://www.notion.so/yasiru-madhuwantha-template-gallery/Workspace-Dashboard-2402d3413dec4d8f822046822fc26526?pvs=4", '_top').focus();
+            else if (id == "comments")
+				window.open("https://www.notion.so/yasiru-madhuwantha-excerpt-gallery/Workspace-Dashboard-db1cbcc0fcf245e0bfb347a100f65798?pvs=4", '_top').focus();
+            else if (id == "microphone")
+				window.open("https://www.notion.so/yasiru-madhuwantha-habit-tracker/Workspace-Dashboard-2554b3a8c64d46dd94b975dcb7db4310?pvs=4", '_top').focus();
+            else if (id == "safari")
+				window.open("https://www.notion.so/yasiru-madhuwantha-routine-tracker/Workspace-Dashboard-533d0ec3414f4431ad83676f22431d8c?pvs=4", '_top').focus();
+            else if (id == "redhat")
+				window.open("https://www.notion.so/yasiru-madhuwantha-fourteenth-workspace/Workspace-Dashboard-a34836c1bb5c42c7a7565f7f53e40592?pvs=4", '_top').focus();
+            else if (id == "calculator")
+				window.open("https://www.notion.so/yasiru-madhuwantha-fifteenth-workspace/Workspace-Dashboard-3446d9e9af5c48ac8271a49eb7895bfa?pvs=4", '_top').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
