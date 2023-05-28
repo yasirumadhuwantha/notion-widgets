@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #252525;
+		}
+
+		.border {
+			border: 1px solid #252525;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #bfb5b4;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+        <a id="radar" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-satellite-dish fa-2x" style="font-size:2x;color:#009BFF"></i></a>
+        <a id="feather" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-feather fa-2x" style="font-size:2x;color:#00A551"></i></a>
+        <a id="camera" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-camera fa-2x" style="font-size:2x;color:#F8CB00"></i></a>
+        <a id="search" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-magnifying-glass fa-2x" style="font-size:2x;color:#ffffff"></i></a>
+        <a id="settings" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-gear fa-2x" style="font-size:2x;color:#F05425"></i></a>
+        <a id="testtube" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-vial fa-2x" style="font-size:2x;color:#1BB899"></i></a>
+        <a id="calendar" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days fa-2x" style="font-size:2x;color:#E74C3C"></i></a>
+        <a id="graduate" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap fa-2x" style="font-size:2x;color:#44C2FC"></i></a>
+        <a id="puzzle" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-puzzle-piece fa-2x" style="font-size:2x;color:#D81A60"></i></a>
+        <a id="keyboard" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-keyboard fa-2x" style="font-size:2x;color:#808080"></i></a>
+        <a id="notion" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-n fa-2x" style="font-size:2x;color:#ffffff"></i></a>
+        <a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-handshake fa-2x" style="font-size:2x;color:#F9C295"></i></a>
+        <a id="user" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-face-laugh-wink fa-2x" style="font-size:2x;color:#FEEA2A"></i></a>
+        <a id="star" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-star fa-2x" style="font-size:2x;color:#E4A100"></i></a>
+        <a id="thunderbolt" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bolt fa-2x" style="font-size:2x;color:#FD0001"></i></a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'radar')
+				window.open("https://www.notion.so/Workspace-Dashboard-8ada109c395e4feb9960bbbf1faaa996?pvs=4", '_top').focus();
+			else if (id == "feather")
+				window.open("https://www.notion.so/Workspace-Dashboard-cf3273075e4545bb8fa25933b28952f6?pvs=4", '_top').focus();
+			else if (id == "camera")
+				window.open("https://www.notion.so/Workspace-Dashboard-c7fa6b48cbf94805aaf1a347b0d27e9c?pvs=4", '_top').focus();
+			else if (id == "search")
+				window.open("https://www.notion.so/personal-analytical-workspace/Workspace-Dashboard-e9df0574ce2145e58417b5aaa5bbecdb?pvs=4", '_top').focus();
+			else if (id == "settings")
+				window.open("https://www.notion.so/Workspace-Dashboard-f8b66d0127784fce91781327cc531a3c?pvs=4", '_top').focus();
+			else if (id == "testtube")
+				window.open("https://www.notion.so/yasiru-madhuwantha-new-template-gallery/Workspace-Dashboard-1b5502f8c4d3425b9f574870e43c6e0b?pvs=4", '_top').focus();
+			else if (id == "calendar")
+				window.open("https://www.notion.so/yasiru-madhuwantha/Workspace-Dashboard-e2027aca20ce45d1b0a9617373886250?pvs=4", '_top').focus();
+            else if (id == "graduate")
+				window.open("https://www.notion.so/yasiru-madhuwantha-public-template-gallery/Workspace-Dashboard-cc8c03e008714029bcf160c3166c3a82?pvs=4", '_top').focus();
+            else if (id == "puzzle")
+				window.open("https://www.notion.so/yasirumadhuwantha/Workspace-Dashboard-9012e9e7b2bb42f790c861e4c6fee95b?pvs=4", '_top').focus();
+            else if (id == "keyboard")
+				window.open("https://www.notion.so/yasiru-madhuwantha-web-notes-collection/Workspace-Dashboard-4b624867d470426fbecb2889ff9f099b?pvs=4", '_top').focus();
+            else if (id == "notion")
+				window.open("https://www.notion.so/Workspace-Dashboard-27394d8f25234ba1a9a5043c933bbd9a?pvs=4", '_top').focus();
+            else if (id == "business")
+				window.open("https://www.notion.so/personal-business-workspace/Workspace-Dashboard-a116f23b2fa94f8cb40677f5d2082621?pvs=4", '_top').focus();
+            else if (id == "user")
+				window.open("https://www.notion.so/abstract-general-workspace/Workspace-Dashboard-fca0e7bb3d894bf19165c86bb3310681?pvs=4", '_top').focus();
+            else if (id == "star")
+				window.open("https://www.notion.so/productive-workspace/Workspace-Dashboard-5c8b4f1d8d6f4fa7a6c2346b1ccb504f?pvs=4", '_top').focus();
+            else if (id == "thunderbolt")
+				window.open("https://www.notion.so/wgyasiru/Workspace-Dashboard-2ef5294752b0481f81b9eaf95caf713d?pvs=4", '_top').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
