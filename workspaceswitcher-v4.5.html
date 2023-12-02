@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        /* Navigation Menu */  
+        .navMenu {
+            font-family: 'Domine', sans-serif;
+            padding: 8px;
+            text-align: center;
+            margin: 7px auto;
+            width: 825px;
+        }
+
+        .navMenu a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 6px;
+            font-family: 'Domine', sans-serif; /* Added */
+        }
+
+        .background {
+            background-color: #252525;
+        }
+
+        .border {
+            border: 1px solid #252525;
+        }
+
+        .navMenu a:hover {
+            color: #bfb5b4;
+        }
+/* Text Block */
+  .text-block {
+            text-align: center;
+            color: #ffffff;
+            margin: 20px auto;
+            font-family: 'Domine', sans-serif;
+            border: 1px solid #252525;
+            width: 825px;
+            margin: 7px auto;
+            padding: 8px;
+            background-color: #252525;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Section 1 -->
+    <div class="text-block">
+        <p>Notion Workspace Switcher [ OPEN LINKS IN SAME TAB ]</p>
+    </div>
+	
+</style>
+</head>
+<body>
+    <!-- Section 2 -->
+        <nav class="navMenu border background">
+	<a id="house" onclick="navigate(this.id)" href="#" alt="Advanced Residential Workspace" title="Advanced Residential Workspace"> <i class="fa-solid fa-house-user  fa-2x" style="font-size:2x;color:#FB792E"></i></a>
+	<a id="media" onclick="navigate(this.id)" href="#" alt="Personal Multimedia Repository" title="Personal Multimedia Repository"> <i class="fa-solid fa-photo-film fa-2x" style="font-size:2x;color:#0acf7d"></i></a>
+	<a id="openbook" onclick="navigate(this.id)" href="#" alt="Notion Cybernated Repository" title="Notion Cybernated Repository"> <i class="fa-solid fa-book-open fa-2x" style="font-size:2x;color:#E22647"></i></a>
+	<a id="hippo" onclick="navigate(this.id)" href="#" alt="Database Management Department" title="Database Management Department"> <i class="fa-solid fa-hippo fa-2x" style="font-size:2x;color:#e97345"></i></a>
+	<a id="flask" onclick="navigate(this.id)" href="#" alt="Personal Specific Workspace" title="Personal Specific Workspace"> <i class="fa-solid fa-flask-vial fa-2x" style="font-size:2x;color:#CF9FFF"></i></a>
+	<a id="lemon" onclick="navigate(this.id)" href="#" alt="Personal Achievement Workspace" title="Personal Achievement Workspace"> <i class="fa-solid fa-lemon fa-2x" style="font-size:2x;color:#FFFF00"></i></a>
+	<a id="gallery" onclick="navigate(this.id)" href="#" alt="Personal Website Dashboard" title="Personal Website Dashboard"> <i class="fa-solid fa-snowflake fa-2x" style="font-size:2x;color:#31AFE2"></i></a>
+        <a id="sketch" onclick="navigate(this.id)" href="#" alt="Personal Programming Workspace" title="Personal Programming Workspace"> <i class="fa-solid fa-brush fa-2x" style="font-size:2x;color:#FE5722"></i></a>
+        <a id="arc" onclick="navigate(this.id)" href="#" alt="Notion Template Repository" title="Notion Template Repository"> <i class="fa-solid fa-compass-drafting fa-2x" style="font-size:2x;color:#F24F66"></i></a>
+        <a id="lightbulb" onclick="navigate(this.id)" href="#" alt="Advanced Knowledge System" title="Advanced Knowledge System"> <i class="fa-solid fa-lightbulb fa-2x" style="font-size:2x;color:#FFCA10"></i></a>
+        <a id="comments" onclick="navigate(this.id)" href="#" alt="Personal Excerpt Collection" title="Personal Excerpt Collection"> <i class="fa-solid fa-comments fa-2x" style="font-size:2x;color:#2BCB4D"></i></a>
+        <a id="microphone" onclick="navigate(this.id)" href="#" alt="Project Pursuing Workspace" title="Project Pursuing Workspace"> <i class="fa-solid fa-microphone-lines fa-2x" style="font-size:2x;color:#ffffff"></i></a>
+        <a id="safari" onclick="navigate(this.id)" href="#" alt="Routine Management Workspace" title="Routine Management Workspace"> <i class="fa-brands fa-safari fa-2x" style="font-size:2x;color:#1DA2F8"></i></a>
+        <a id="redhat" onclick="navigate(this.id)" href="#" alt="Notion Document Repository" title="Notion Document Repository"> <i class="fa-brands fa-redhat fa-2x" style="font-size:2x;color:#EE0000"></i></a>
+        <a id="calculator" onclick="navigate(this.id)" href="#" alt="Advanced Learning Workspace" title="Advanced Learning Workspace"> <i class="fa-solid fa-calculator fa-2x" style="font-size:2x;color:#CDCCD1"></i></a>
+
+
+
+	</nav>
+<body>
+    <!-- Section 3 -->
+    <div class="text-block">
+        <p>Notion Workspace Switcher [ OPEN LINKS IN NEW TAB ]</p>
+    </div>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'house')
+				window.open("https://www.notion.so/yasiru-madhuwantha-first-workspace/Workspace-Dashboard-39293435f31f46d98357c6f60ff21d5e?pvs=4", '_top').focus();
+			else if (id == "media")
+				window.open("https://www.notion.so/yasiru-madhuwantha-second-workspace/Workspace-Dashboard-4a452bb887854e2c9b5d9df4c534d077?pvs=4", '_top').focus();
+			else if (id == "openbook")
+				window.open("https://www.notion.so/yasiru-madhuwantha-third-workspace/Workspace-Dashboard-5ceaa05a16204007a5d68b010a7df1ac?pvs=4", '_top').focus();
+			else if (id == "hippo")
+				window.open("https://www.notion.so/yasiru-madhuwantha-fourth-workspace/Workspace-Dashboard-102aa0584b8242d3b048ce9d84f379da?pvs=4", '_top').focus();
+			else if (id == "flask")
+				window.open("https://www.notion.so/yasiru-madhuwantha-fifth-workspace/Workspace-Dashboard-99f7c6a64f0c47aab98af15d6f27f4ae?pvs=4", '_top').focus();
+			else if (id == "lemon")
+				window.open("https://www.notion.so/yasiru-madhuwantha-sixth-workspace/Workspace-Dashboard-36456ea3b9b145da920d1fafce019f2e?pvs=4", '_top').focus();
+			else if (id == "gallery")
+				window.open("https://www.notion.so/yasiru-madhuwantha-seventh-workspace/Workspace-Dashboard-aef69cccad554021b33294525aeb7fff?pvs=4", '_top').focus();
+                        else if (id == "sketch")
+				window.open("https://www.notion.so/yasiru-madhuwantha-eighth-workspace/Workspace-Dashboard-8b7a81ab127640069db093c2ea2f8904?pvs=4", '_top').focus();
+                        else if (id == "arc")
+				window.open("https://www.notion.so/yasiru-madhuwantha-ninth-workspace/Workspace-Dashboard-cecd66df7efb41d68721e41b0b69a9c1?pvs=4", '_top').focus();
+                        else if (id == "lightbulb")
+				window.open("https://www.notion.so/yasiru-madhuwantha-template-gallery/Workspace-Dashboard-2402d3413dec4d8f822046822fc26526?pvs=4", '_top').focus();
+                        else if (id == "comments")
+				window.open("https://www.notion.so/yasiru-madhuwantha-excerpt-gallery/Workspace-Dashboard-db1cbcc0fcf245e0bfb347a100f65798?pvs=4", '_top').focus();
+                        else if (id == "microphone")
+				window.open("https://www.notion.so/yasiru-madhuwantha-habit-tracker/Workspace-Dashboard-2554b3a8c64d46dd94b975dcb7db4310?pvs=4", '_top').focus();
+                        else if (id == "safari")
+				window.open("https://www.notion.so/yasiru-madhuwantha-routine-tracker/Workspace-Dashboard-533d0ec3414f4431ad83676f22431d8c?pvs=4", '_top').focus();
+                        else if (id == "redhat")
+				window.open("https://www.notion.so/yasiru-madhuwantha-fourteenth-workspace/Workspace-Dashboard-a34836c1bb5c42c7a7565f7f53e40592?pvs=4", '_top').focus();
+                        else if (id == "calculator")
+				window.open("https://www.notion.so/yasiru-madhuwantha-fifteenth-workspace/Workspace-Dashboard-3446d9e9af5c48ac8271a49eb7895bfa?pvs=4", '_top').focus();
+            
+
+		}
+	</script>
+<body>
+    <!-- Section 4 -->
+	<nav class="navMenu  border background">
+        <a id="radar" onclick="navigate(this.id)" href="#" alt="System Automation Dashboard" title="System Automation Dashboard"> <i class="fa-solid fa-satellite-dish fa-2x" style="font-size:2x;color:#009BFF"></i></a>
+        <a id="feather" onclick="navigate(this.id)" href="#" alt="Project Management Workspace" title="Project Management Workspace"> <i class="fa-solid fa-feather fa-2x" style="font-size:2x;color:#00A551"></i></a>
+        <a id="camera" onclick="navigate(this.id)" href="#" alt="Notion Template Showroom" title="Notion Template Showroom"> <i class="fa-solid fa-camera fa-2x" style="font-size:2x;color:#F8CB00"></i></a>
+        <a id="search" onclick="navigate(this.id)" href="#" alt="Personal Analytical Workspace" title="Personal Analytical Workspace"> <i class="fa-solid fa-magnifying-glass fa-2x" style="font-size:2x;color:#ffffff"></i></a>
+        <a id="settings" onclick="navigate(this.id)" href="#" alt="Notion Resource Collection" title="Notion Resource Collection"> <i class="fa-solid fa-gear fa-2x" style="font-size:2x;color:#F05425"></i></a>
+        <a id="testtube" onclick="navigate(this.id)" href="#" alt="Personal Experimental Workground" title="Personal Experimental Workground"> <i class="fa-solid fa-vial fa-2x" style="font-size:2x;color:#1BB899"></i></a>
+        <a id="calendar" onclick="navigate(this.id)" href="#" alt="Personal Examination Department" title="Personal Examination Department"> <i class="fa-solid fa-calendar-days fa-2x" style="font-size:2x;color:#E74C3C"></i></a>
+        <a id="graduate" onclick="navigate(this.id)" href="#" alt="Notion Universal Workspace" title="Notion Universal Workspace"> <i class="fa-solid fa-graduation-cap fa-2x" style="font-size:2x;color:#44C2FC"></i></a>
+        <a id="puzzle" onclick="navigate(this.id)" href="#" alt="Notion Production Workspace" title="Notion Production Workspace"> <i class="fa-solid fa-puzzle-piece fa-2x" style="font-size:2x;color:#D81A60"></i></a>
+        <a id="keyboard" onclick="navigate(this.id)" href="#" alt="Personal Stationery Workspace" title="Personal Stationery Workspace"> <i class="fa-solid fa-keyboard fa-2x" style="font-size:2x;color:#808080"></i></a>
+        <a id="notion" onclick="navigate(this.id)" href="#" alt="Notion Templates Workspace" title="Notion Templates Workspace"> <i class="fa-solid fa-n fa-2x" style="font-size:2x;color:#ffffff"></i></a>
+        <a id="business" onclick="navigate(this.id)" href="#" alt="Notion Business Workspace" title="Notion Business Workspace"> <i class="fa-solid fa-handshake fa-2x" style="font-size:2x;color:#F9C295"></i></a>
+        <a id="user" onclick="navigate(this.id)" href="#" alt="Abstract General Workspace" title="Abstract General Workspace"> <i class="fa-solid fa-face-laugh-wink fa-2x" style="font-size:2x;color:#FEEA2A"></i></a>
+        <a id="star" onclick="navigate(this.id)" href="#" alt="Notion Productive Workspace" title="Notion Productive Workspace"> <i class="fa-solid fa-star fa-2x" style="font-size:2x;color:#E4A100"></i></a>
+        <a id="thunderbolt" onclick="navigate(this.id)" href="#" alt="Notion Developer's Workspace" title="Notion Developer's Workspace"> <i class="fa-solid fa-bolt fa-2x" style="font-size:2x;color:#FD0001"></i></a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+
+		function navigate(id) {
+                	if (id == "radar")
+				window.open("https://www.notion.so/Workspace-Dashboard-8ada109c395e4feb9960bbbf1faaa996?pvs=4", '_top').focus();
+                        else if (id == "feather")
+				window.open("https://www.notion.so/Workspace-Dashboard-cf3273075e4545bb8fa25933b28952f6?pvs=4", '_top').focus();
+			else if (id == "camera")
+				window.open("https://www.notion.so/Workspace-Dashboard-c7fa6b48cbf94805aaf1a347b0d27e9c?pvs=4", '_top').focus();
+			else if (id == "search")
+				window.open("https://www.notion.so/personal-analytical-workspace/Workspace-Dashboard-e9df0574ce2145e58417b5aaa5bbecdb?pvs=4", '_top').focus();
+			else if (id == "settings")
+				window.open("https://www.notion.so/Workspace-Dashboard-f8b66d0127784fce91781327cc531a3c?pvs=4", '_top').focus();
+			else if (id == "testtube")
+				window.open("https://www.notion.so/yasiru-madhuwantha-new-template-gallery/Workspace-Dashboard-1b5502f8c4d3425b9f574870e43c6e0b?pvs=4", '_top').focus();
+			else if (id == "calendar")
+				window.open("https://www.notion.so/yasiru-madhuwantha/Workspace-Dashboard-e2027aca20ce45d1b0a9617373886250?pvs=4", '_top').focus();
+                        else if (id == "graduate")
+				window.open("https://www.notion.so/yasiru-madhuwantha-public-template-gallery/Workspace-Dashboard-cc8c03e008714029bcf160c3166c3a82?pvs=4", '_top').focus();
+                        else if (id == "puzzle")
+				window.open("https://www.notion.so/yasirumadhuwantha/Workspace-Dashboard-9012e9e7b2bb42f790c861e4c6fee95b?pvs=4", '_top').focus();
+                        else if (id == "keyboard")
+				window.open("https://www.notion.so/yasiru-madhuwantha-web-notes-collection/Workspace-Dashboard-4b624867d470426fbecb2889ff9f099b?pvs=4", '_top').focus();
+                        else if (id == "notion")
+				window.open("https://www.notion.so/Workspace-Dashboard-27394d8f25234ba1a9a5043c933bbd9a?pvs=4", '_top').focus();
+                        else if (id == "business")
+				window.open("https://www.notion.so/personal-business-workspace/Workspace-Dashboard-a116f23b2fa94f8cb40677f5d2082621?pvs=4", '_top').focus();
+                        else if (id == "user")
+				window.open("https://www.notion.so/abstract-general-workspace/Workspace-Dashboard-fca0e7bb3d894bf19165c86bb3310681?pvs=4", '_top').focus();
+                        else if (id == "star")
+				window.open("https://www.notion.so/productive-workspace/Workspace-Dashboard-5c8b4f1d8d6f4fa7a6c2346b1ccb504f?pvs=4", '_top').focus();
+                        else if (id == "thunderbolt")
+				window.open("https://www.notion.so/wgyasiru/Workspace-Dashboard-2ef5294752b0481f81b9eaf95caf713d?pvs=4", '_top').focus();
+
+	</script>
+
+
+
+</body>
+
+</html>
