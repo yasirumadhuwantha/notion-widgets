@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+	<!-------->
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.navMenu {
+			font-family: 'Advent Pro', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+		.navMenu a {
+			color: #ffffff;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+		.background {
+			background-color: #252525;
+		}
+		.border {
+			border: 1px solid #252525;
+            border-radius: 20px;
+
+		}
+		.navMenu a:hover {
+
+			color: #bfb5b4;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navMenu  border background">
+        <a id="workspacehome" onclick="navigate(this.id)" href="#" alt="Abstract General Workspace" title="Abstract General Workspace"> <i class="fa-solid fa-face-laugh-wink fa-2x" style="font-size:2x;color:#FEEA2A"></i></a>
+        <a id="teamspacehome" onclick="navigate(this.id)" href="#" alt="Teamspace Home" title="Teamspace Home"> <i class="fa-solid fa-house-chimney-window fa-2x" style="font-size:2x;color:#2D9964"></i></a>
+		<a id="fitness" onclick="navigate(this.id)" href="#" alt="Analytical Fitness Tracker" title="Analytical Fitness Tracker"> <i class="fa-solid fa-dumbbell fa-2x" style="font-size:2x;color:#2E7CD1"></i></a>
+		<a id="weight" onclick="navigate(this.id)" href="#" alt="Simple Weight Tracker" title="Simple Weight Tracker"> <i class="fa-solid fa-scale-balanced fa-2x" style="font-size:2x;color:#AA755F"></i></a>
+		<a id="course" onclick="navigate(this.id)" href="#" alt="Course Tracking System" title="Course Tracking System"> <i class="fa-solid fa-graduation-cap fa-2x" style="font-size:2x;color:#8D5BC1"></i></a>
+		<a id="food" onclick="navigate(this.id)" href="#" alt="Food & Beverage Party" title="Food & Beverage Party"> <i class="fa-solid fa-pizza-slice fa-2x" style="font-size:2x;color:#f04805"></i></a>
+	</nav>
+	<script>
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+		function navigate(id) {
+           if (id == 'workspacehome')
+				window.open("https://www.notion.so/abstract-general-workspace/Abstract-General-Workspace-fca0e7bb3d894bf19165c86bb3310681?pvs=4", '_top').focus();
+			else if (id == "teamspacehome")
+				window.open("https://www.notion.so/abstract-general-workspace/Teamspace-Home-66a76e1ff6b34184b1ddc0e314bc5e49?pvs=4", '_top').focus();
+			else if (id == 'fitness')
+				window.open("https://www.notion.so/abstract-general-workspace/Analytical-Fitness-Tracker-v2-0-78936276e98a470b98cc6e6b2eb829aa?pvs=4", '_top').focus();
+			else if (id == "weight")
+				window.open("https://www.notion.so/abstract-general-workspace/Simple-Weight-Tracker-v2-0-27adfc92f27046a394ab8288e2ed67f2?pvs=4", '_top').focus();
+			else if (id == "course")
+				window.open("https://www.notion.so/abstract-general-workspace/Course-Tracking-System-019111c9b1284fcca18ae0762d344bca?pvs=4", '_top').focus();
+				else if (id == "food")
+				window.open("https://www.notion.so/abstract-general-workspace/Teamspace-Restaurant-58f2b43aaa1a4393a3c5e18b5ef32e30?pvs=4", '_top').focus();
+		}
+	</script>
+</body>
+</html>
