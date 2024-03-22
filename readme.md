@@ -10,4 +10,3 @@ This repository includes Notion widget based html language with Notion embeds.
 <h3 align=center> Notion Workspace Switcher </h3>
 ( 01 ) Notion Workspace Switcher 5.0 Release: https://yasirumadhuwantha.github.io/notion-widgets/ws.html
 <hr/>
-<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
