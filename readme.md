@@ -11,7 +11,7 @@ This repository includes Notion widget based html language with Notion embeds.
 <br/>
 ( 05 ) Notion Daily Trackers Navigation Bar 07: https://yasirumadhuwantha.github.io/notion-widgets/navbar7.html
 <br/>
-( 06 ) Notion Daily Trackers Navigation Bar 08:
+( 06 ) Notion Daily Trackers Navigation Bar 08:<br/>
        https://yasirumadhuwantha.github.io/notion-widgets/Daily%20Trackers/dtnb8.html
 <hr/>
 <h3 align=center> Notion Workspace Switcher </h3>
